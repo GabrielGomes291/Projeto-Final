@@ -76,3 +76,15 @@ body {
     font-weight: 600;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
+
+.navbar{
+    background-color: #1c0606;
+}
+.card{
+    background-color:#140303;
+}
+.fundosobre{
+    background-color: #ffffff1e;
+    color: #130202;
+    font-size: large;
+}

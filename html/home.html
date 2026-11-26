@@ -1,11 +1,192 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>RedLine Atlas</title>
 </head>
 <body>
-    
+
+    <!-- menu com a logo -->
+    <nav class="navbar lg:navbar-expand sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="../img/logo-branco.png" alt="Logo RedLine Atlas" width="50">
+                RedLine Atlas
+            </a>
+
+            <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false"
+                aria-label="Abrir menu">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end drawer-instant" tabindex="-1"
+                id="menu" aria-labelledby="tituloMenu">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="tituloMenu">Menu</h5>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="drawer" aria-label="Fechar"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Entrar</a></li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <!-- Iamgem grande -->
+    <div id="inicio" class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/camisa1.webp" class="d-block w-100"
+                    alt="Camisa de compressão">
+                <div class="legenda">
+                    <h2>Roupas</h2>
+                    <p>Nova coleção para treinar com conforto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <section id="produtos" class="container py-5">
+        <h2 class="text-center mb-4">Nossos produtos</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div>
+                <div class="card h-100">
+                    <img src="../img/Bag.webp" class="card-img-top" alt="Bolsa de treino">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa de treino</h5>
+                        <p class="card-text">Espaço de sobra para seus equipamentos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card h-100">
+                    <img src="../img/strap.webp" class="card-img-top" alt="Straps de levantamento">
+                    <div class="card-body">
+                        <h5 class="card-title">Straps</h5>
+                        <p class="card-text">Mais pegada nas séries pesadas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card h-100">
+                    <img src="../img/cinto.webp" class="card-img-top" alt="Cinto de alavanca">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinto de alavanca</h5>
+                        <p class="card-text">Apoio firme para atingir seu limite.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card h-100">
+                    <img src="../img/elastico.webp" class="card-img-top" alt="Faixas elásticas">
+                    <div class="card-body">
+                        <h5 class="card-title">Faixas elásticas</h5>
+                        <p class="card-text">Vários níveis de resistência para progredir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card h-100">
+                    <img src="../img/Pulso.jpg" class="card-img-top" alt="Munhequeiras de suporte">
+                    <div class="card-body">
+                        <h5 class="card-title">Munhequeiras</h5>
+                        <p class="card-text">Estabilidade para os punhos nos exercícios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card h-100">
+                    <img src="../img/camisa1.webp" class="card-img-top" alt="Camisa de compressão">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisa de compressão</h5>
+                        <p class="card-text">Edição limitada com estampa exclusiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- infor -->
+    <section id="sobre" class="fundosobre py-5">
+        <div class="container text-center">
+            <h2>Sobre a RedLine Atlas</h2>
+            <p class="mt-3">
+                Na RedLine Atlas, acreditamos que a dedicação ao treino merece o melhor suporte. 
+                Por isso, reunimos em um só lugar uma seleção completa de roupas esportivas, 
+                suplementos de alta qualidade e equipamentos projetados para maximizar seu desempenho. 
+                Seja você um atleta profissional ou alguém que busca saúde e bem-estar, oferecemos 
+                produtos que acompanham seu ritmo e impulsionam seus resultados. Com foco em inovação, 
+                conforto e eficácia, somos o parceiro ideal para quem leva o treino a sério e quer 
+                superar seus limites todos os dias.
+            </p>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <!-- feedback -->
+    <section id="contato" class="container py-5">
+        <div class="caixa mx-auto" style="max-width: 500px">
+            <h2 class="text-center mb-4">Fale com a gente!</h2>
+
+            <form id="formulario" class="vstack gap-4" data-bs-validate novalidate>
+                <div class="form-field">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" id="nome" class="form-control" minlength="3" required>
+                    <div class="invalid-feedback">Digite seu nome (mínimo 3 letras).</div>
+                </div>
+
+                <div class="form-field">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-control" required>
+                    <div class="invalid-feedback">Digite um e-mail válido.</div>
+                </div>
+
+                <div class="form-field">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea id="mensagem" class="form-control" rows="3" required></textarea>
+                    <div class="invalid-feedback">Escreva sua mensagem.</div>
+                </div>
+
+                <button type="submit" class="btn-solid theme-danger">Enviar</button>
+            </form>
+
+            <!-- só sucesso -->
+            <div id="avisoSucesso" class="alert theme-success mt-4 mb-0"
+                role="status" style="display: none">
+                <p class="mb-0">Mensagem enviada com sucesso! Obrigado pelo contato.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- rodapé -->
+    <footer class="bg-black text-center py-4">
+        <img src="../img/logo-vermelho.png" alt="Logo" width="50">
+        <p class="mb-0 mt-2">© 2026 RedLine Atlas</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script type="module" src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
