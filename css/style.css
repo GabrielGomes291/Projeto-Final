@@ -1,0 +1,78 @@
+
+/* SOS */
+
+body {
+    background: radial-gradient(circle at top, #5a0a0a, #130000 60%) fixed;
+}
+
+/* Imagens do carrossel */
+.carousel-item img {
+    height: 350px;
+    object-fit: contain;
+    background: white;
+}
+
+/* Texto que fica por cima da imagem do carrossel */
+.carousel-item {
+    position: relative;
+}
+
+.legenda {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Imagens dos cards */
+.card img {
+    height: 200px;
+    object-fit: contain;
+    background: white;
+}
+
+/* Frescura do texto lá (animação) */
+.js .aparecer {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
+}
+
+.js .aparecer.visivel {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js .aparecer {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Formulários (box) */
+.caixa {
+    background: #1c0606;
+    border: 1px solid #e01b1b;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+/* Mensagem (rever pq ta dando errado) */
+.aviso {
+    position: fixed;
+    inset: 20px 20px auto auto;
+    margin: 0;
+    padding: 14px 22px;
+    border: 0;
+    border-radius: 10px;
+    background: #198754;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
