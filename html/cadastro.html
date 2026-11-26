@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Cadastro</title>
 </head>
-<body>
-    
+
+<body class="d-flex align-items-center min-vh-100">
+
+    <main class="container" style="max-width: 460px">
+        <a href="login.html" class="btn-outline theme-inverse mb-3">← Voltar</a>
+
+        <div class="caixa">
+            <h1 class="fs-3xl text-center mb-4">Crie sua conta!</h1>
+
+            <form id="formulario" class="vstack gap-4" data-bs-validate novalidate>
+
+                <div class="form-field">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" id="nome" class="form-control" minlength="3" required>
+                    <div class="invalid-feedback">Digite seu nome (mínimo 3 letras).</div>
+                </div>
+
+                <div class="form-field">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-control" required>
+                    <div class="invalid-feedback">Digite um e-mail válido.</div>
+                </div>
+
+                <div class="form-field">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" id="senha" class="form-control" minlength="6" required>
+                    <div class="invalid-feedback">A senha precisa ter no mínimo 6 caracteres.</div>
+                </div>
+
+                <button type="submit" class="btn-solid theme-danger">Criar conta</button>
+
+            </form>
+        </div>
+    </main>
+
+    <dialog class="dialog dialog-instant text-center" id="modalSucesso" data-bs-theme="dark" aria-labelledby="tituloSucesso">
+        <div class="dialog-header">
+            <h3 class="dialog-title" id="tituloSucesso">Conta criada com sucesso!</h3>
+            <button type="button" class="btn-close fechar-dialog" aria-label="Fechar"></button>
+        </div>
+
+        <div class="dialog-footer">
+            <a href="login.html" class="btn-solid theme-danger">Ir para o login</a>
+        </div>
+    </dialog>
+
+    <!-- mensagem que deu certo denovo -->
+    <span id="aviso" class="aviso" popover="manual" role="status"></span>
+
+    <script src="../js/script.js"></script>
+
 </body>
 </html>

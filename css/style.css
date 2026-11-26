@@ -66,15 +66,14 @@ body {
 /* Mensagem (rever pq ta dando errado) */
 .aviso {
     position: fixed;
-    inset: 20px 20px auto auto;
-    margin: 0;
-    padding: 14px 22px;
-    border: 0;
-    border-radius: 10px;
-    background: #198754;
+    top: 20px;
+    right: 20px;
+    background-color: #198754;
     color: white;
-    font-weight: 600;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    z-index: 9999;
 }
 
 .navbar{
